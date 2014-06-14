@@ -1,0 +1,47 @@
+#alumno: Jose Zerpa
+#C.I. 22.956.321
+
+print("                                Calculadora")
+print()
+opc=input("Coloca la operacion matematica que desees realizar: ")
+print()
+num=int(input("Coloca aqui el primer numero: "))
+num1=int(input("Coloca aqui el primer numero: "))
+print()
+if opc=="S":
+    print("Se sumaron ambos numeros")
+    suma=num+num1
+    print ("El resultado es: ",suma)
+else:
+    if opc=="R":
+        print("Se restaron ambos numeros")
+        resta=num-num1
+        print ("El resultado es: ",resta)
+if opc=="M":
+    print("Se multiplicaron ambos numeros")
+    multi=num*num1
+    print ("El resultado es: ",multi)
+else:
+     if opc=="D":
+        print("Se Dividieron ambos numeros")
+        if num1!=0:
+            divi=num/num1
+            print ("El resultado es: ",divi)
+        else:
+            print ("No puede dividirse entre 0")
+if opc=="P":
+    print ("Operacion Exponencial")
+    potencia=num**num1
+    print("El resultado es: ",potencia)
+else:
+    if opc=="RA":
+        print("Operacion Raiz de un numero")
+        import math
+        raiz=math.sqrt(num)
+        print("El resultadom es: ", raiz)
+print()
+print("Bye Usuario")
+    
+    
+    
+
